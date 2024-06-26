@@ -25,6 +25,8 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
+      - name: Clean maven
+        run: mvn clean install
       - name: Run Tests Wieh Maven
         run: mvn tests
   build:
